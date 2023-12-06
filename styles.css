@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+  
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+header {
+    background-color: beige;
+}
+.card {
+    border: none;
+}
+
+/* si hay que pisar estilo
+.bg-light {
+    background-color: chartreuse !important;
+}
+*/
+
+.fondo-claro {
+    background-color: lightcyan;
+}
+.text-center {
+    text-align: center!important;
+}

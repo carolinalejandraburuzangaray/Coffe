@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <link href="img/logo.jpg" rel="icon" sizes="32x32" type="">
+    <link rel="stylesheet" href="estilos.css">
+    <meta charset="utf-8">
+    <meta name="Coffe" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Coffe</title>
+
+</head>
+
+<body>
+
+    <header>
+        <!-- remuevo bg-light -->
+        <nav class="navbar navbar-expand-lg navbar-light fondo-claro">
+            <div class="container">
+                <a class="navbar-brand" href="#">Coffe</a><!-- logo -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+
+                    <!-- modificar según necesidad-->
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link active" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/Tipos.html">Tipos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/Cafetales.html">Cafetales</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/Recetas.html">Recetas</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="banner-recetas">
+        <div class="overlay-hero"></div>
+        <div class="container text-center">
+            <h1 class="Tituloprincipal">Recetas</h1>
+        </div>
+     </div>
+     <main class="container">
+        <section class="row my-4 aos-init aos-animate" data-aos="fade-up">
+      <div class="col-md-4 filtro-desplegable">
+        <form action="Bebidas">
+          <div class="form-group">
+            <i class="fas fa-chevron-down"></i>
+            <select name="Bebidas" class="form-control FiltrosRecetas" id="Bebidas">
+              <option value="Bibidas">Bebidas frias de café</option>
+              <option value="Bibidas">Bebidas calientes de café</option>
+            </select>
+          </div>
+        </form>
+      </div>
+      
+          <div class="col-md-4">
+            <form action="Postres">
+              <div class="form-group">
+                <select name="Postres" class="form-control FiltrosRecetas" id="Postres">
+                  <option value="Postres">Postres con café</option>
+                  <option value="Postres">Comida de sal con café</option>
+                </select>
+              </div>
+            </form>
+          </div>
+      
+          <div class="col-md-4">
+            <form action="Alchol">
+              <div class="form-group">
+                <select name="Alcohol" class="form-control FiltrosRecetas" id="Alcohol">
+                  <option value="Alchol">Con Alcohol</option>
+                  <option value="Alchol">Sin Alcohol</option>
+                </select>
+              </div>
+            </form>
+          </div>
+      
+      
+          <!-- Imágenes en 3 columnas -->
+          <h2 class="text-center my-5">Postres con Café</h2>
+          <section class="row mt-4 aos-init aos-animate" data-aos="fade-up">
+            <div class="col-md-4 mb-4 text-center">
+              <h3>Galletas de café</h3>
+              <img src="../img/galletas de cafe.webp" alt="Galletas de café" class="img-fluid ImagenRecetas mx-auto">
+            </div>
+          
+            <div class="col-md-4 mb-4 text-center">
+              <h3>Tortas de café</h3>
+              <img src="../img/tortas de cafe.jpg" alt="Torta de café" class="img-fluid ImagenPreparación mx-auto">
+            </div>
+          
+            <div class="col-md-4 mb-4 text-center">
+              <h3>Tiramisú</h3>
+              <img src="../img/tiramisu.webp" alt="Tiramisú" class="img-fluid ImagenPreparación mx-auto">
+            </div>
+          </section>
+        </section>
+      
+         <!-- formulario de contacto -->
+         <div class="container mt-5">
+          <div class="row">
+            <div class="col-md-6 aos-init aos-animate" data-aos="fade-right">
+              <div class="centered-form">
+                <h2 class="text-center mb-4">Formulario de Contacto</h2>
+                <p>¡Estamos encantados de que estés interesado en conocernos mejor! Si deseas obtener más información sobre nosotros y lo que hacemos, no dudes en ponerte en contacto.</p>
+                <form>
+                  <div class="form-group">
+                    <label for="nombre">Nombre y apellido:</label>
+                    <input type="text" class="form-control" id="nombre" placeholder="Indicanos tu nombre" required="">
+                  </div>
+                  <div class="form-group">
+                    <label for="pais">País y ciudad:</label>
+                    <input type="text" class="form-control" id="pais" placeholder="Indicanos de donde eres" required="">
+                  </div>
+                  <div class="form-group">
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" class="form-control" id="telefono" placeholder="Indicanos tu número de teléfono" required="">
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" placeholder="Indicanos tu correo electrónico" required="">
+                  </div>
+                  <div class="form-group">
+                    <label for="asunto">Asunto:</label>
+                    <input type="text" class="form-control" id="asunto" placeholder="Asunto del mensaje" required="">
+                  </div>
+                  <div class="form-group">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea class="form-control" id="mensaje" placeholder="Escribe tu mensaje aquí" rows="5" required=""></textarea>
+                  </div>
+                  <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1" required="">
+                    <label class="form-check-label" for="exampleCheck1">Acepto los términos y condiciones</label>
+                  </div>
+                  <button type="submit" class="btn btn-primary btn-block mb-5 my-3">Enviar</button>
+                </form>
+              </div>
+            </div>
+            <div class="col-md-6 aos-init aos-animate" data-aos="fade-left">
+              <img src="../img/contacto.jpg" alt="Imagen de ejemplo" class="form-image">
+            </div>
+          </div>
+        </div>
+      </main>
+    <footer class="bg-dark text-white py-3">
+        <div class="container-fluid text-center">
+            <p class="m-0">
+                © 2023 Carola Carlucci | Todos los derechos reservados | Coffe - Colombia
+            </p>
+        </div>
+      </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
