@@ -25,3 +25,11 @@ header {
 .text-center {
     text-align: center!important;
 }
+.contener {
+display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    grid-template-columns: 1fr 5fr 2fr;
+}
